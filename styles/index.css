@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(39, 39, 39);
+}
+
+/* COVER PAGE SECTION */
+.cover-page {
+  background: url(../images/cover-page-background.png);
+  background-size: cover;
+  background-position-x: -230px;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+@media (min-width: 678px) {
+  .cover-page {
+    background-position-x: right;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__sup {
+  background-color: #1967a4;
+  width: 100%;
+  height: 70px;
+}
+
+.header__mid {
+  background-color: #1968a4cc;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 20px;
+}
+@media (min-width: 678px) {
+  .header__mid {
+    padding-left: 40px;
+  }
+}
+
+.header__product-title {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+}
+@media (min-width: 678px) {
+  .header__product-title {
+    font-size: 16px;
+  }
+}
+
+.header__inf {
+  background-color: #1968a4a2;
+  width: 100%;
+  height: 20px;
+}
+
+.cover-page__info-container {
+  width: 50%;
+  height: 100%;
+  padding-left: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (min-width: 678px) {
+  .cover-page__info-container {
+    padding-left: 40px;
+  }
+}
+
+.cover-page__title {
+  font-size: 32px;
+  text-align: start;
+  text-shadow: -3px 2px 0 #505050ec;
+}
+@media (min-width: 678px) {
+  .cover-page__title {
+    font-size: 36px;
+  }
+}
+
+.cover-page__logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  position: relative;
+  top: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: solid 1px;
+}
+
+.cover-page__logo {
+  height: auto;
+}
+@media (min-width: 678px) {
+  .cover-page__logo {
+    height: 30px;
+  }
+}
+
+.cover-page__logo-subtitle {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 6px;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+@media (min-width: 364px) {
+  .cover-page__logo-subtitle {
+    font-size: 8px;
+  }
+}
+@media (min-width: 678px) {
+  .cover-page__logo-subtitle {
+    font-size: 11px;
+  }
+}
