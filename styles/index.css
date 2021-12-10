@@ -13,10 +13,11 @@ body {
 .cover-page {
   background: url(../images/cover-page-background.png);
   background-size: cover;
-  background-position-x: -230px;
+  /* background-position-x: -230px; */
+  background-position-x: center;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  height: 570px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -103,21 +104,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0;
-  position: relative;
-  top: 40px;
   margin-bottom: 20px;
   padding: 5px;
   border: solid 1px;
+  width: 100%;
 }
 
 .cover-page__logo {
   height: auto;
+  width: 100%;
 }
 @media (min-width: 678px) {
-  .cover-page__logo {
-    height: 30px;
+  .cover-page__logo-container {
+    width: 80%;
   }
 }
 
@@ -133,8 +134,13 @@ body {
     font-size: 8px;
   }
 }
+@media (min-width: 530px) {
+  .cover-page__logo-subtitle {
+    font-size: 12px;
+  }
+}
 @media (min-width: 678px) {
   .cover-page__logo-subtitle {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
