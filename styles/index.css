@@ -129,18 +129,23 @@ body {
   margin-top: 3px;
   margin-bottom: 0px;
 }
-@media (min-width: 364px) {
+@media (min-width: 280px) {
   .cover-page__logo-subtitle {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
-@media (min-width: 530px) {
+@media (min-width: 390px) {
+  .cover-page__logo-subtitle {
+    font-size: 10px;
+  }
+}
+@media (min-width: 470px) {
   .cover-page__logo-subtitle {
     font-size: 12px;
   }
 }
 @media (min-width: 678px) {
   .cover-page__logo-subtitle {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
